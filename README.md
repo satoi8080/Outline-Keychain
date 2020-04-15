@@ -17,6 +17,6 @@ Developed for key and password export and copy & paste for other Shadowsocks cli
 
 5. Access localhost, usually http://127.0.0.1:5000/
 
-## Why does this program exist
+## Why does this program exist in this form
 Just uses requests and urllib3 to override https verify so that API could be used without any SSL certificates
 
