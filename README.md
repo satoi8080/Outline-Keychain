@@ -1,21 +1,22 @@
-#Outline Flask Interface
+# Outline - Keychain
 
-## A simple Outline Management API Web Interface
+## A simple Outline Server Access Key Copy and Paste Web Interface
 
-
-Developed for rapid key and password export and copy & paste for other Shadowsocks clients to access Outline Server
+Developed for key and password export and copy & paste for other Shadowsocks clients to access Outline Server
 
 ## Instruction
-0. Install dependencies from requirements.txt 
-pip install -r requirements.txt 
+1. Install dependencies from requirements.txt 
+`pip3 install -r requirements.txt` 
 
-1. Insert your API URL copied from settings in Outline Manager App
+2. Copy your **Management API URL**s in **settings** of each server in [Outline Manager](https://getoutline.org/en/home)
 
-2. Into index.html from line 14 and on
+3. Paste them into **index.html** in each `""` of `value=""` from line 15 and on
 
-3. Run app.py with Python3
+4. Run app.py 
+`python3 app.py`
 
-4. Access localhost
+5. Access localhost, usually http://127.0.0.1:5000/
 
-## Why does it exist
-Just uses requests urllib3 to override https verify so that API could be used without any SSL certificates
+## Why does this program exist
+Just uses requests and urllib3 to override https verify so that API could be used without any SSL certificates
+
